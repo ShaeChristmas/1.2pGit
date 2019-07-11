@@ -1,0 +1,67 @@
+#include "splashkit.h"
+
+//load_bitmap(name,filename);
+//load_sound_effect(name,filename);
+
+void frame1() {
+    load_bitmap("Scene", "scene.png");
+
+    draw_bitmap("Scene",0,0);
+    delay(1000);
+    refresh_screen();
+    delay(2000);
+
+
+}
+
+void frame2() {
+    clear_screen();
+    load_sound_effect("Bruh","Bruh.wav");
+    //work on this one now; or at least at home bc you want to be done with all the tasks before the end of the week.
+    play_sound_effect("Bruh");
+    delay(250);
+    refresh_screen();
+    delay(1000);
+}
+
+void frame3() {
+
+
+    refresh_screen();
+    delay(2000);
+}
+
+void frame4() {
+
+
+    refresh_screen();
+    delay(2000);
+}
+
+void frame5() {
+
+
+    refresh_screen();
+    delay(2000);
+}
+
+int main()
+{
+
+    open_window("does it look like i know how to code?",750,928);
+    clear_screen();
+    frame1();
+    clear_screen();
+    frame2();
+
+  //  clear_screen();
+  //  frame3();
+
+  //  clear_screen();
+  //  frame4();
+
+  //  clear_screen();
+  //  frame5();
+
+    return 0;
+}
