@@ -1,0 +1,21 @@
+#include "splashkit.h"
+
+
+void draw_house_scene() {
+    clear_screen(COLOR_LIGHT_BLUE);
+    fill_ellipse(COLOR_BRIGHT_GREEN, 0,400,800,400);
+    fill_rectangle(COLOR_RED,300,300,200,200);
+    fill_triangle(COLOR_DARK_CYAN,250,300,400,150,550,300);
+    refresh_screen();
+
+    delay(5000);
+}
+
+int main()
+{
+    open_window("drawing",800,600);
+    delay(1000);
+    draw_house_scene();
+    delay(10000);
+
+}
